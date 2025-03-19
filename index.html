@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html  lang="en" dir="ltr">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hijala</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+  <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
+  <link rel="preload" as="image" href="./assets/images/calories.svg">
+  <style>
+    .logo-image {
+      width: 40px; /* تحديد العرض */
+      height: 40px; /* تحديد الارتفاع */
+      object-fit: cover; /* يضمن أن الصورة تتناسب مع الأبعاد */
+    }
+    
+  </style>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif; /* خط عربي جميل */
+      direction: rtl; /* يجعل النص يتجه نحو اليمين */
+      text-align: right; /* محاذاة النص لليمين */
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      font-family: 'Amiri', serif; /* يمكن تغيير الخط هنا */
+      font-size: 36px;
+      color: #333;
+      margin-top: 50px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555;
+      margin: 20px;
+    }
+  </style>
+  
+  <!-- تضمين خط Cairo من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- تضمين خط Amiri من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="assets\images/LOGO-2.png" alt="Hijala Logo" class="logo-image" />
+        <span class="span">Hijala</span>
+      </a>
+      
+      
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>الرئيسية </a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>  من أنا </a>
+          </li>
+
+          <li>
+            <a href="#class" class="navbar-link" data-nav-link>أعمالي</a>
+          </li>
+
+  
+          <li>
+            <a href="#" class="navbar-link" data-nav-link> تواصل معي</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="https://discord.com/invite/sGTBCDeE2J" class="btn btn-secondary">دخول لأن</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">
+              <strong class="strong">الأفضل</strong>جيد
+            </p>
+
+            <h1 class="h1 hero-title">Hijala.com</h1>
+
+            <p class="section-text">
+              موقع "حجالة " متخصص في ترجمة المانهوا الكورية والصينية إلى العربية، مع التركيز على قصص الأكشن، الخيال، الفانتازيا، والفنون القتالية.
+            </p>
+
+            <a href="https://hijala.com/" target="_blank" class="btn btn-primary">مشاههدة لأن</a>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-1">
+            <img src="./assets/images/hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">
+
+            <img src="./assets/images/heart-rate.png" width="255" height="270" alt="heart rate"
+              class="abs-img abs-img-1">
+            <img src="./assets/images/calories.png" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner has-after">
+            <img src="./assets/images/about-banner.png" width="660" height="648" loading="lazy" alt="about banner"
+              class="w-100">
+
+            <img src="./assets/images/about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-1">
+            <img src="./assets/images/about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+              alt="" class="circle circle-2">
+
+            <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+              class="abs-img w-100">
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">نبذة عني</p>
+
+            <h2 class="h2 section-title">مرحبا
+              
+            </h2>
+
+            <p class="section-text">
+              أنا ايرين ييغر، محرر متخصص في تحرير فصول المانهوا. أعمل على تنسيق وتنظيف الصفحات، تنقيح النصوص، وضبط الترجمة لتقديم تجربة قراءة سلسة وجذابة. لدي خبرة في استخدام برامج التحرير مثل Photoshop وأدوات معالجة النصوص، مما يساعدني على إنتاج فصول بجودة عالية.
+            </p>
+
+            <p class="section-text">
+              أسعى دائمًا للحفاظ على دقة النصوص وسلاسة الحوار مع الحفاظ على الطابع الأصلي للمانهوا، سواء في الترجمة أو في تنسيق الفصول. أؤمن بأن التفاصيل الصغيرة تصنع فرقًا كبيرًا، وأعمل بجد لضمان أن كل فصل يبدو احترافيًا وممتعًا للقراء.
+            </p>
+
+            <div class="wrapper">
+
+              <div class="about-coach">
+
+                <figure class="coach-avatar">
+                  <img src="./assets/images/about-coach.jfif" width="65" height="65" loading="lazy" alt="Trainer">
+                </figure>
+
+                <div>
+                  <h3 class="h3 coach-name">EREN YEAGER</h3>
+
+                  <p class="coach-title">Adobe Photoshop</p>
+                </div>
+
+              </div>
+
+              <a href="#blog" class="btn btn-primary">اكتشف المزيد</a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #VIDEO
+      -->
+
+      <section class="section video" aria-label="video">
+        <div class="container">
+
+          <div class="video-card has-before has-bg-image"
+            style="background-image: url('./assets/images/video-banner.jpg')">
+
+            <h2 class="h2 card-title">تحرير المانهوا باحترافية</h2>
+
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="https://youtube.com/@hijala?si=AStwp34dxbbfdPgr" target="_blank" class="btn-link has-before">شاهد المزيد</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CLASS
+      -->
+
+      <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
+        style="background-image: url('./assets/images/classes-bg.png')">
+        <div class="container">
+
+          <p class="section-subtitle">أعمالي</p>
+
+          <h2 class="h2 section-title text-center">فصول المانهوا لجميع الأنماط</h2>
+
+          <ul class="class-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/logo2.png" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">تحرير الفصول</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    تحرير وتنسيق فصول المانهوا باحترافية لضمان الجودة.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label"> نسبة</p>
+
+                      <span class="progress-value">85%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/logo1.png" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="#" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">تدقيق وتحسين النصوص</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    تنقيح وتحرير فصول المانهوا لضمان النصوص الخالية من الأخطاء.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label"> نسبة</p>
+
+                      <span class="progress-value">70%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/logo1.png" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">تنظيف فصول المانهوا</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    تحسين و التبييض الفصول والتأكد من جودتها بشكل كامل.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label"> نسبة</p>
+
+                      <span class="progress-value">90%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 90%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/logo2.png" width="416" height="240" loading="lazy" alt="The Fitness Pack"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">ترجمة فصول المانهوا</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    نحن نعمل على ترجمة الفصول بدقة، وضمان انتقال المعنى الأصلي بشكل واضح وسلس.
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label"> نسبة</p>
+
+                      <span class="progress-value">60%</span>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Our News</p>
+
+          <h2 class="h2 section-title text-center">Latest Blog Feed</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-1.jpg" width="440" height="270" loading="lazy"
+                    alt="Going to the gym for the first time" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Going to the gym for the first time</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
+                    habitasse platea dictumst.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-2.jpg" width="440" height="270" loading="lazy"
+                    alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Parturient accumsan cacus pulvinar magna</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
+                    habitasse platea dictumst.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-3.jpg" width="440" height="270" loading="lazy"
+                    alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Risus purus namien parturient accumsan cacus</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
+                    habitasse platea dictumst.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+      -->
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="assets\images/LOGO-2.png" alt="Hijala Logo" class="logo-image" />
+            <span class="span">Hijala</span>
+          </a>
+          
+
+          <p class="footer-brand-text">
+            تحرير وتنسيق فصول المانهوا باحترافية لضمان تجربة قراءة سلسة وممتعة.
+          </p>
+
+  <!--          <div class="wrapper">
+
+            <img src="./assets/images/footer-clock.png" width="34" height="34" loading="lazy" alt="Clock">
+
+            <ul class="footer-brand-list">
+
+              <li>
+                <p class="footer-brand-title">Monday - Friday</p>
+
+                <p>7:00Am - 10:00Pm</p>
+              </li>
+
+              <li>
+                <p class="footer-brand-title">Saturday - Sunday</p>
+
+                <p>7:00Am - 2:00Pm</p>
+              </li>
+
+            </ul>
+
+          </div>  -->
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">روابطنا</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">الرئيسية</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">من أنا  </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">أعمالي</a>
+          </li>
+
+
+          <li>
+            <a href="#" class="footer-link">تواصل معي</a>
+          </li>
+
+        </ul>
+
+      <!--    <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              1247/Plot No. 39, 15th Phase, Colony, Kukatpally, Hyderabad
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:18001213637" class="footer-link">1800-121-3637</a>
+
+              <a href="tel:+915552348765" class="footer-link">+91 555 234-8765</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@fitlife.com" class="footer-link">info@fitlife.com</a>
+
+              <a href="mailto:services@fitlife.com" class="footer-link">services@fitlife.com</a>
+            </div>
+          </li>
+
+        </ul>  -->
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">النشرة البريدية</p>
+          </li>
+
+    <!--        <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>  -->
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; جميع الحقوق محفوظة <a href="#" class="copyright-link">© 2025 Hijala</a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">سياسة الخصوصية</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">الشروط والأحكام</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
